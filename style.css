@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff5f7;
+    font-family: 'Lato', sans-serif;
+    color: #5a3e3e;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #ffe4ec;
+    border-bottom: 1px solid #f7c5d5;
+}
+
+.nav-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #b5697a;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #b5697a;
+    margin-left: 30px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* HERO */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #fff0f5, #f5ffe0);
+    padding: 60px 20px;
+}
+
+.hero-sub {
+    font-size: 1rem;
+    color: #a0887a;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    color: #c9856a;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.hero-tagline {
+    font-size: 1rem;
+    color: #9aad8a;
+    letter-spacing: 4px;
+}
+
+/* ABOUT */
+.about {
+    padding: 80px 60px;
+    background-color: #fffaf5;
+    text-align: center;
+}
+
+.about h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #c9856a;
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-size: 1.05rem;
+    line-height: 2;
+    color: #7a5c5c;
+    max-width: 700px;
+    margin: 0 auto 15px auto;
+}
+
+/* QUOTE */
+.quote-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #ffe4ec, #f5ffe0);
+    text-align: center;
+}
+
+.quote-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-style: italic;
+    color: #b5697a;
+    margin-bottom: 20px;
+}
+
+.quote-author {
+    font-size: 0.9rem;
+    color: #9aad8a;
+    letter-spacing: 2px;
+}
+
+/* FOOTER */
+footer {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffe4ec;
+    color: #b5697a;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.footer-flower {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+.petal {
+    position: fixed;
+    top: -20px;
+    animation: fall linear infinite;
+    pointer-events: none;
+    z-index: 999;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+.hero-photo {
+    margin-top: 40px;
+}
+
+.hero-photo {
+    margin-top: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 320px;
+    height: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 90%;
+    transform: scale(1.0);
+    border-radius: 50%;
+    border: 4px solid #c9856a;
+    box-shadow: 0 0 30px rgba(201, 133, 106, 0.3);
+}
